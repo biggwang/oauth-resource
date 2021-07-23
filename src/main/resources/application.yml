@@ -1,0 +1,24 @@
+server:
+  port: 8080
+
+logging:
+  level:
+    root: INFO
+    org.springframework: INFO
+    org.springframework.web: DEBUG
+    org.springframework.security: TRACE
+    org.hibernate:
+      SQL: DEBUG
+      stat: DEBUG
+    org.hibernate.type.descriptor.sql.BasicBinder: TRACE
+    jdbc: INFO
+    jdbc.sqltiming: DEBUG
+    jdbc.resultsettable: DEBUG
+
+security:
+  oauth2:
+    client:
+      client-id: testClientId
+      client-secret: testClientId
+    resource:
+      token-info-uri: http://localhost:8081/oauth/check_token
