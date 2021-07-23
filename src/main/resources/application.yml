@@ -17,8 +17,10 @@ logging:
 
 security:
   oauth2:
-    client:
-      client-id: testClientId
-      client-secret: testClientId
-    resource:
-      token-info-uri: http://localhost:8081/oauth/check_token
+    jwt:
+      signkey: 123@#$
+#    client:
+#      client-id: testClientId
+#      client-secret: testClientId
+#    resource:
+#      token-info-uri: http://localhost:8081/oauth/check_token
